@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-echo "Starting the Automated SwagLabs E2E Test Suite..."
+echo "Starting the Automated Array Challenge E2E Test Suite..."
 npm test
 
