@@ -1,7 +1,7 @@
 const {expect} = require('chai');
 
 const load = () => {
-    browser.url(browser.options.baseUrl);
+    browser.url('http://localhost:3000/');
 };
 
 const pause = (milliseconds) => {

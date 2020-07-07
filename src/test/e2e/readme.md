@@ -28,6 +28,14 @@ install
 ## How to execute tests
 execute
  `sh runTests.sh`  
+ 
+## How to install via Docker
+install
+ `docker-compose build`
+
+## How to execute via Docker
+execute
+ `docker-compose up` 
 
 ## Console Log
 `****************Printing the result set******************************
