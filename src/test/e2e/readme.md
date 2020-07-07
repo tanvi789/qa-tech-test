@@ -29,6 +29,16 @@ install
 execute
  `sh runTests.sh`  
 
+## Console Log
+`****************Printing the result set******************************
+ Total sum of the row array elements: 364
+ Division of the total sum: 182
+ Index value: 40
+ [0-0] left value 162
+ Right value 162
+ Index: 5
+`
+
 ## Reports
 `Specs based`
  

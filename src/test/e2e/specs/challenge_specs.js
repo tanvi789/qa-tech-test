@@ -1,11 +1,14 @@
 const mocha = require('mocha');
 const describe = mocha.describe;
+const {expect, assert} = require('chai');
+
+
 const getIndex = require('../test_lib/find__row_array_index');
 const Browser = require('../test_lib/base_page');
 WElements = require('../test_lib/webpage_elements');
 
 describe("Scroll challenge", () => {
-    it.skip('should display submit button', () => {
+    it('should display submit button', () => {
         Browser.load();
         /**
          * Render the Challenge
@@ -19,7 +22,7 @@ describe("Scroll challenge", () => {
         /**
          * Assertion to make sure submit button is displayed.
          * */
-        assert.equal(true, submit_button.isDisplayedInViewport())
+        assert.isTrue(submit_button.isDisplayed());
     });
 });
 describe("The Challenge to find out the index", () => {
@@ -38,11 +41,11 @@ describe("The Challenge to find out the index", () => {
         /**
          * Submit the index values
          * */
-        // WElements.submit_first_challenge.setValue(first_index_input);
-        // WElements.submit_second_challenge.setValue(second_index_input);
-        // WElements.submit_third_challenge.setValue(third_index_input);
-        // WElements.enter_name.setValue('Tanvi Nanda');
-        // WElements.submit_button.click();
+            // WElements.submit_first_challenge.setValue(first_index_input);
+            // WElements.submit_second_challenge.setValue(second_index_input);
+            // WElements.submit_third_challenge.setValue(third_index_input);
+            // WElements.enter_name.setValue('Tanvi Nanda');
+            // WElements.submit_button.click();
         const submit_first_challenge = $('[data-test-id= "submit-1"]');
         const submit_second_challenge = $('[data-test-id= "submit-2"]');
         const submit_third_challenge = $('[data-test-id= "submit-3"]');
