@@ -15,7 +15,7 @@ const find_index_from_which_sum_of_left_and_right_is_equal = (row_array) => {
         }
     }
     aggregated = total_sum;
-    console.log("****************Printing the result set******************************");
+    console.log("****************Scenario 2 - Printing the result set******************************");
     console.log("Total sum of the row array elements:", total_sum);
     div_total_sum = total_sum / 2;
     console.log("Division of the total sum:", div_total_sum);

@@ -2,7 +2,7 @@ const mocha = require('mocha');
 const describe = mocha.describe;
 const {expect, assert} = require('chai');
 const getIndex = require('../test_lib/find_row_array_index');
-const Browser = require('../test_lib/base_page');
+const Browser = require('../test_lib/browser_handle');
 Navigation = require('../test_lib/webpage_actions');
 
 describe('hooks', function () {
