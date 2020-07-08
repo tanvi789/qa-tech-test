@@ -43,6 +43,7 @@ execute
 ## Console Log Results for 3 given arrays.
 
 ****************Scenario 2 - Printing the result set******************************
+ 
  Total sum of the row array elements: 462
  Division of the total sum: 231
  Index value: 10
@@ -51,6 +52,7 @@ execute
  Index: 4
  
  ****************Scenario 2 - Printing the result set******************************
+ 
  Total sum of the row array elements: 524
  Division of the total sum: 262
  Index value: 92
@@ -59,6 +61,7 @@ execute
  Index: 3
  
  ****************Scenario 2 - Printing the result set******************************
+ 
  Total sum of the row array elements: 364
  Division of the total sum: 182
  Index value: 40
