@@ -1,6 +1,6 @@
 const {expect, assert} = require('chai');
 
-const submit_results_with_name = async (fIndex, sIndex, tIndex, name) => {
+const submit_results_with_name_and_dialog_verification = async (fIndex, sIndex, tIndex, name) => {
     const submit_first_challenge = await $('[data-test-id= "submit-1"]');
     const submit_second_challenge = await $('[data-test-id= "submit-2"]');
     const submit_third_challenge = await $('[data-test-id= "submit-3"]');
@@ -10,7 +10,12 @@ const submit_results_with_name = async (fIndex, sIndex, tIndex, name) => {
     await submit_second_challenge.setValue(fIndex);
     await submit_third_challenge.setValue(tIndex);
     await enter_name.setValue(name);
+    await submit_button.waitForExist();
     await submit_button.click();
+    const Window =  await browser.getWindowHandle();
+    await browser.switchToWindow(Window);
+    const dialog_element = await $('.dialog');
+    expect(await dialog_element.getText()).contains('Congratulations');
 };
 
 const click_on_rendering = async () => {
@@ -28,10 +33,8 @@ const handle_scroll_bar = async () => {
 };
 
 
-
-
 module.exports = {
-    submit_results_with_name,
+    submit_results_with_name_and_dialog_verification,
     click_on_rendering,
     handle_scroll_bar
 };

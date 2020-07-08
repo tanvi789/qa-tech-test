@@ -12,9 +12,8 @@ const maximize = () => {
     browser.maximizeWindow();
 };
 
-
 module.exports = {
     load,
     pause,
-    maximize
+    maximize,
 };

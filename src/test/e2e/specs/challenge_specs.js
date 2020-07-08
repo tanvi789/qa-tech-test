@@ -1,11 +1,19 @@
 const mocha = require('mocha');
 const describe = mocha.describe;
 const {expect, assert} = require('chai');
-
-
 const getIndex = require('../test_lib/find_row_array_index');
 const Browser = require('../test_lib/base_page');
 Navigation = require('../test_lib/webpage_actions');
+
+describe('hooks', function () {
+    before(function () {
+        console.log('Before');
+    });
+
+    after(function () {
+        console.log('After');
+    });
+});
 
 describe("Scroll challenge", async () => {
     it('should display submit button', async () => {
@@ -37,9 +45,9 @@ describe("The Challenge to find out the index", async () => {
         let third_index_input = getIndex.find_index_from_which_sum_of_left_and_right_is_equal(row3_data);
         console.log("Index:", third_index_input);
         /**
-         * Submit the index values
+         * Submit the index values & Dialog message verification
          * */
-        await Navigation.submit_results_with_name(first_index_input,
+        await Navigation.submit_results_with_name_and_dialog_verification(first_index_input,
             second_index_input,
             third_index_input,
             'Tanvi Nanda');
