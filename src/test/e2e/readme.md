@@ -2,13 +2,24 @@
 
 ## Overview
 I have implemented the scroll and array challenge as part of this test code submission.
+* Scenario 1 - handles scroll bar.
+* Scenario 2 - finds out index and submit the answers and verify the dialog message.
+
+## Observations
+* Second scenario is in fail test due the answers mismatch. I believe its a bug as I have verified submitted indexes/answers.
+* Array implementation logic is explained as:
+    1. Sum all the elements of the Array 
+    2. Division of the total sum by 2 
+    3. Iterate through the array to make sure the cumulative sum of array elements is not greater than division by 2 value (as mentioned in step 2).
+    4. If the value is greater, then that's the value and the index related is the index required to submit as answer.
+    5.If the sum of all left elements (considering the index as mentioned in step 4) element and sum of all right elements are not equal, then the index is returned as null.    
 
 ## Technical Implementation
 This framework implementation is based on Mocha + WebDriverIO as the primary test automation tool. 
 
 The following folders are specially important in the project. 
 * Specs - Holds feature files, to drive the acceptance test scenarios required for this exercise.
-* test_lib - All helper functions like page objects, assertion, user test data
+* test_lib - All helper functions like base page, web page actions, assertion.
 * wdio.config - All the required configurations to execute the tests.
 * Reports - Specs based
 
@@ -28,14 +39,6 @@ install
 ## How to execute tests
 execute
  `sh runTests.sh`  
- 
-## How to install via Docker
-install
- `docker-compose build`
-
-## How to execute via Docker
-execute
- `docker-compose up` 
 
 ## Console Log
 `****************Printing the result set******************************
