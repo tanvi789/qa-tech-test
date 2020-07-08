@@ -41,6 +41,7 @@ execute
  `sh runTests.sh`  
 
 ## Console Log Results for 3 given arrays.
+
 ****************Scenario 2 - Printing the result set******************************
  Total sum of the row array elements: 462
  Division of the total sum: 231
@@ -48,6 +49,7 @@ execute
  Left side total value: 226
  Right side total value: 226
  Index: 4
+ 
  ****************Scenario 2 - Printing the result set******************************
  Total sum of the row array elements: 524
  Division of the total sum: 262
@@ -55,6 +57,7 @@ execute
  Left side total value: 216
  Right side total value: 216
  Index: 3
+ 
  ****************Scenario 2 - Printing the result set******************************
  Total sum of the row array elements: 364
  Division of the total sum: 182
