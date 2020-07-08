@@ -41,7 +41,7 @@ execute
  `sh runTests.sh`  
 
 ## Console Log Results for 3 given arrays.
-`****************Scenario 2 - Printing the result set******************************
+****************Scenario 2 - Printing the result set******************************
  Total sum of the row array elements: 462
  Division of the total sum: 231
  Index value: 10
@@ -62,7 +62,7 @@ execute
  Left side total value: 162
  Right side total value: 162
  Index: 5
-`
+
 
 ## Reports
 `Specs based`
