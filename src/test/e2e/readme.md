@@ -11,8 +11,8 @@ I have implemented the scroll and array challenge as part of this test code subm
     1. Sum all the elements of the Array 
     2. Division of the total sum by 2 
     3. Iterate through the array to make sure the cumulative sum of array elements is not greater than division by 2 value (as mentioned in step 2).
-    4. If the value is greater, then that's the value and the index related is the index required to submit as answer.
-    5.If the sum of all left elements (considering the index as mentioned in step 4) element and sum of all right elements are not equal, then the index is returned as null.    
+    4. If the value is greater, then that's the value and the index related is the index required to submit as an answer.
+    5. If the sum of all left elements (considering the index as mentioned in step 4) and sum of all right elements are not equal, then the index is returned as null.    
 
 ## Technical Implementation
 This framework implementation is based on Mocha + WebDriverIO as the primary test automation tool. 
