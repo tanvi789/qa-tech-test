@@ -42,7 +42,7 @@ execute
 
 ## Console Log Results for 3 given arrays.
 
-****************Scenario 2 - Printing the result set******************************
+**************** Scenario 2 - Printing the result set ******************************
  
  Total sum of the row array elements: 462
  
@@ -56,7 +56,7 @@ execute
  
  Index: 4
  
- ****************Scenario 2 - Printing the result set******************************
+ **************** Scenario 2 - Printing the result set ******************************
  
  Total sum of the row array elements: 524
  
@@ -70,7 +70,7 @@ execute
  
  Index: 3
  
- ****************Scenario 2 - Printing the result set******************************
+ **************** Scenario 2 - Printing the result set ******************************
  
  Total sum of the row array elements: 364
  
